@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 13px;
+}
+/*---- CSS Menu e logo ----*/
+
+header{
+    background-color: #000;
+    height:100px;
+    display:flex;
+}
+header .header{
+    width:1120px;
+    height:100px;
+    margin: auto;
+    display: flex;
+    align-items:center;
+}
+header .logo img{
+    width:100px;
+    height:auto;
+}
+.menu{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+}
+.menu ul{
+    display:flex;
+    justify-content:flex-end;
+    list-style: none;
+}
+
+.menu li a{
+    padding-left:10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items:center;
+    height:100px;
+    border-bottom: 4px solid #000;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.menu li a:hover{
+    border-bottom: 4px solid #b98b59;
+    color: gray;
+}
+
+ul .active a{
+    border-bottom: 4px solid #b98b59;
+    color: gray;
+}
+
+/*---- CSS Banner ----*/
+
+section .banner{
+    height:calc(100vh - 100px);
+    background-color:gray;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section .banner .blackout{
+    height:calc(100vh - 100px);
+    background-color:rgba(0,0,0,0.5);
+}
