@@ -1,0 +1,11 @@
+@media(max-width:425px) {
+   header{
+       height:auto;
+   }
+    .menu ul{
+        flex-direction:column;
+    }
+    .menu ul li a{
+        border: none;
+    }
+}
