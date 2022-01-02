@@ -1,0 +1,18 @@
+
+        <section class="default light">
+            <div class="title">About Us</div>
+            <div class="description">Who we are?</div>
+            <div class="body">
+                <div class="textArea">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                    <br/>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+                <div class="imgArea">
+                    <div class="legendaImage">
+                        <p>WATCH VIDEO!</p>
+                    </div> 
+                    <img src="complementos/foto6.jpg" class="imgVideo" alt="video">
+                </div>    
+            </div>
+        </section>

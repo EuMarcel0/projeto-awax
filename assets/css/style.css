@@ -114,7 +114,7 @@ ul .active a{
     text-transform: uppercase;
     font-weight: 600;
 }
-.banner .button{
+.button{
     text-decoration: none;
     color: #fff;
     display: block;
@@ -127,6 +127,11 @@ ul .active a{
     border-radius:20px;
     background-color: #b98b59;
     padding: 0 40px;
+    transition:all 0.4s linear;
+}
+.button:hover{
+    background-color: #ebc195;   
+    
 }
 
 /*---- CSS pointers Slide ----*/
@@ -152,7 +157,411 @@ ul .active a{
     background-color: #b98b59;
 }
 
-/*---- Default ----*/
+/*---- Default Content (Light)----*/
+
 .default{
-    background-color:#f7f7f7;
+    display:flex;
+    margin: auto;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.default .title,
+.default .description{
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+    text-transform:uppercase;
+}
+.default .description{
+    color: #adadad;
+    font-size: 9px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.default .textArea a{
+    display: inline-block;
+    margin-top:30px;
+}
+.default .body{
+    display:flex;
+    justify-content:space-between;
+    width: 1120px;
+}
+.default .textArea{
+    color:#353535;
+    font-size: 14px;
+    line-height:20px;
+    margin-right: 12px;;
+}
+.default .body .imgVideo{
+    width:340px;
+    height:auto;
+    box-shadow: 2px 6px 12px #737272;
+}
+.default .imgArea{
+    position:relative;
+    cursor:pointer;
+}
+.default .body .legendaImage{
+    width:340px;
+    height:auto;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    color: #fff;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.default .imgArea:hover .legendaImage{
+    display:flex;
+    transition: all 0.5s linear;
+}
+
+/*---- Area Default colors ----*/
+
+.default.light{
+    background-color: #f7f7f7;
+    color: #000;
+}
+.default.dark{
+    background-color: #000;
+    color: #fff;
+}
+
+/*---- Services ----*/
+.filterProjects{
+    margin-bottom:25px;
+}
+.default.dark .services{
+   display: flex;
+   width: 1120px;
+   justify-content:space-around;
+   text-align:center;
+}
+.services .service h1{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top:20px ;
+}
+.services .service p{
+    font-size:13px;
+    color: #4e4e4e;
+    margin-top:10px;
+    font-weight:400;
+}
+.default.dark .services .service{
+    flex:1;
+    padding: 10px;
+    border-right: 1px solid #393939;
+}
+.default.dark .services .service.borderleft{
+    border-left: 1px solid #393939;
+}
+.services .serviceIcon{
+    width: 50px;
+}
+
+
+/*---- Our Projects (Filter bar area) ----*/
+
+.body .filterProjects{
+    width: 600px;
+    margin: auto;
+    background-color: #ededed;
+    padding: 15px 30px;
+    height:50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid #ccc;
+}
+.body .filterProjects ul{
+    list-style: none;
+    display: flex;
+    align-items:center;
+    text-transform: uppercase;
+}
+.body .filterProjects ul li{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:50px;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+}
+.body .filterProjects ul li:last-child{
+    border-right: 0;
+}
+.body .filterProjects ul li:hover{
+    border-bottom: 5px solid #b98b59;
+}
+.body .filterProjects ul li.active{
+    border-bottom: 5px solid #b98b59;
+}
+
+/*---- Photos Area ----*/
+
+.galeryProjects{
+    width:100vw;
+    max-width: 1120px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photoArea{
+    width: 280px;
+    cursor:pointer;
+}
+.photoArea img{
+    width:260px;
+    height:168px;
+}
+.photoArea .photo{
+    margin: 10px;
+    position: relative; 
+   
+}
+.galeryProjects .photoArea .photoInfo{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height:168px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7)
+}
+.galeryProjects .photoArea .photoInfo h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight:600;
+}
+.galeryProjects .photoArea .photoInfo p{
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    line-height:20px;
+}
+
+.galeryProjects .photoArea:hover .photoInfo{
+    display: flex;
+}
+
+
+/*---- Our Team ----*/
+
+.bg-team{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 0;
+}
+.sectionTeamArea{
+    width:100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.teamArea{
+    overflow: hidden;
+    max-width: 880px;
+}
+.default.dark .teamArea{
+    width: 100vw;
+    margin: auto;
+}
+
+/*---- Sliders Team ----*/
+
+.teamArea .slidersArea{
+    width:1000vw;
+    height:100%;
+}
+.teamArea .slider{
+    width: 280px;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    justify-content:center;
+    align-items:center;
+    margin-right: 20px;
+    border-radius:3px;
+}
+
+/*---- Sliders Team Pointers ----*/
+
+.teamArea .pointers{
+    margin-top:40px;
+    height: 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.teamArea .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b98b59;
+    border-radius:8px;
+    margin: 0 5px;
+    cursor:pointer;
+}
+.teamArea .pointers .active{
+    background-color: #b98b59;
+}
+
+/*---- Content Sliders ----*/
+
+.teamArea .slidersArea .sliderContent{
+    text-align: center;
+    color: #000;
+    padding:30px;
+}
+.teamArea .slidersArea .sliderContent .avatarImage{
+    width:150px;
+    margin-bottom:30px;
+}
+.teamArea .slidersArea .sliderContent h1{
+    text-transform:uppercase;
+    font-weight:600;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.teamArea .slidersArea .sliderContent p{
+    font-size: 10px;
+}
+.teamArea .slidersArea .sliderContent .socialsIcons a{
+    width:25px;
+    height:25px;
+    margin-right: 5px;
+    border-radius: 13px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#bebebe;
+    padding: 10px;
+    text-decoration: none;
+}
+.teamArea .slidersArea .sliderContent .socialsIcons a.active,
+.teamArea .slidersArea .sliderContent .socialsIcons a:hover{
+    background-color: #b98b5a;
+}
+.teamArea .slidersArea .sliderContent .socialsIcons p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom:10px;
+}
+.teamArea .slidersArea .sliderContent .socialsIcons:last-child{
+    margin-right:0;
+}
+.teamArea .slidersArea .sliderContent .socials{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+
+/*---- Happy Clients ----*/
+
+.slideClients{
+    width:100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*---- Slide Happy Clients ----*/
+
+
+.slideClients .slidersArea{
+    display:flex;
+    width:1000vw;
+    height:100%;
+}
+.slideClients .slider{
+    width: 1120px;
+    height: 100%;
+    display: inline-block;
+    justify-content:center;
+    align-items:center;
+}
+.slideClients .sliderContent{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+.slideClients .sliderContent .clientAvatar{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.slideClients .sliderContent .nameClient p:first-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+.slideClients .sliderContent .nameClient p:last-child{
+    font-weight: 600;
+    margin-top:5px;
+}
+.slideClients .sliderContent .depoimentClient{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 600px;
+    line-height:25px
+}
+.slideClients .sliderContent .depoimentClient img{
+    width: 26px;
+    margin-top:23px;
+    margin-bottom:15px;
+}
+
+
+/*---- Slider Pointer Happy clients ----*/
+
+
+.slideClients .pointers{
+    width: 1120px;
+    height: 15px;
+    margin-top:40px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slideClients .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b98b59;
+    border-radius:8px;
+    margin: 0 5px;
+    cursor:pointer;
+}
+.slideClients .pointers .active{
+    background-color: #b98b59;
 }
