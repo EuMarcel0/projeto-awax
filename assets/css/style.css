@@ -15,10 +15,9 @@ body{
 header{
     background-color: #000;
     height:100px;
-    display:flex;
 }
-header .header{
-    width:1120px;
+.header{
+    max-width:1120px;
     height:100px;
     margin: auto;
     display: flex;
@@ -157,7 +156,7 @@ ul .active a{
     background-color: #b98b59;
 }
 
-/*---- Default Content (Light)----*/
+/*---- Default Content (Light) About Us Zone----*/
 
 .default{
     display:flex;
@@ -177,18 +176,19 @@ ul .active a{
 }
 .default .description{
     color: #adadad;
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 5px;
     margin-bottom: 40px;
 }
 .default .textArea a{
     display: inline-block;
-    margin-top:30px;
+    margin-top:40px;
 }
-.default .body{
-    display:flex;
-    justify-content:space-between;
-    width: 1120px;
+.default .contentAboutUs{
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    max-width: 1120px;
 }
 .default .textArea{
     color:#353535;
@@ -197,7 +197,7 @@ ul .active a{
     margin-right: 12px;;
 }
 .default .body .imgVideo{
-    width:340px;
+    width:500px;
     height:auto;
     box-shadow: 2px 6px 12px #737272;
 }
@@ -206,7 +206,7 @@ ul .active a{
     cursor:pointer;
 }
 .default .body .legendaImage{
-    width:340px;
+    width:500px;
     height:auto;
     display:none;
     justify-content:center;
@@ -234,14 +234,21 @@ ul .active a{
     background-color: #000;
     color: #fff;
 }
+.default.white{
+    background-color: #fff;
+    color: #000;
+}
 
 /*---- Services ----*/
+
 .filterProjects{
     margin-bottom:25px;
 }
 .default.dark .services{
    display: flex;
-   width: 1120px;
+   margin: auto;
+   padding:20px;
+   max-width: 1120px;
    justify-content:space-around;
    text-align:center;
 }
@@ -308,6 +315,11 @@ ul .active a{
 }
 .body .filterProjects ul li.active{
     border-bottom: 5px solid #b98b59;
+}
+.body .projects a{
+    width:190px;
+    text-align:center;
+    margin: auto;
 }
 
 /*---- Photos Area ----*/
@@ -482,40 +494,36 @@ ul .active a{
 }
 
 
-/*---- Happy Clients ----*/
-
-.slideClients{
-    width:100%;
-    overflow: hidden;
-}
-
-
-
-
-
-
 /*---- Slide Happy Clients ----*/
 
 
-.slideClients .slidersArea{
-    display:flex;
-    width:1000vw;
-    height:100%;
+.depoiment .body{
+    max-width:initial;
 }
-.slideClients .slider{
-    width: 1120px;
+.depoimentsClientArea{
+    overflow: hidden;
+}
+.depoimentsClientArea .slideClients{
+    width: 1000vw;
     height: 100%;
-    display: inline-block;
-    justify-content:center;
-    align-items:center;
 }
-.slideClients .sliderContent{
+.depoimentsClientArea .slider{
+    width: 1000vw;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center;
-    text-align: center;
 }
+.depoimentsClientArea .sliderContent{
+    display:flex;
+    width: 100%;
+    flex-direction:column;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
 .slideClients .sliderContent .clientAvatar{
     margin-top:30px;
     margin-bottom:30px;
@@ -532,7 +540,7 @@ ul .active a{
     display: flex;
     flex-direction: column;
     align-items:center;
-    width: 600px;
+    max-width: 600px;
     line-height:25px
 }
 .slideClients .sliderContent .depoimentClient img{
@@ -545,16 +553,14 @@ ul .active a{
 /*---- Slider Pointer Happy clients ----*/
 
 
-.slideClients .pointers{
-    width: 1120px;
+.depoimentsClientArea .pointers{
     height: 15px;
     margin-top:40px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.slideClients .pointer{
+.depoimentsClientArea .pointer{
     width: 15px;
     height: 15px;
     border: 2px solid #b98b59;
@@ -562,6 +568,92 @@ ul .active a{
     margin: 0 5px;
     cursor:pointer;
 }
-.slideClients .pointers .active{
+.depoimentsClientArea .pointers .active{
+    background-color: #b98b59;
+}
+
+
+/*---- Empresas Parceiras ----*/
+
+.empresas .empresasApoiadoras{
+    padding: 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.empresas .empresasApoiadoras .logoEmpresa{
+    margin-left:80px;
+}
+.empresas .empresasApoiadoras .logoEmpresa:first-child{
+    margin-left:0;
+}
+
+
+/*---- Price ----*/
+
+
+.tablePrice{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.tablePrice .containerPrice{
+    max-width: 1120px;
+    height: 100%;
+}
+.tablePrice .price{
+    width: 260px;
+    padding: 20px 40px;
+    margin-right: 25px;
+    background-color:#fff;
+    border-radius:5px;
+}
+.tablePrice .price:last-child{
+    margin-right:0;
+}
+.tablePrice .price p:first-child{
+    font-size: 13px;
+    text-transform:uppercase;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+.tablePrice .price h1{
+    font-size: 27px;
+    margin-bottom:-5px;
+}
+.tablePrice .price span{
+    text-transform:uppercase;
+    color: #b5b5b5;
+    font-size:10px;
+    font-weight: normal;
+    display: inline-block;
+    margin-bottom:17px;
+}
+.tablePrice .price .itemsPrice{
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.tablePrice .price a{
+    display:inline-block;
+    width:130px;
+    height:46px;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:13px;
+    color: #fff;
+    background-color: #373737;
+    margin-top:30px;
+    margin-bottom:0px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition:all 0.3s linear;
+}
+.tablePrice .price a:hover{
+    background-color: #b98b59;
+}
+.tablePrice .price a.active{
     background-color: #b98b59;
 }
