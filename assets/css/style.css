@@ -167,14 +167,14 @@ ul .active a{
     padding-top:50px;
     padding-bottom:50px;
 }
-.default .title,
-.default .description{
+.default .section-title,
+.default .section-description{
     text-align: center;
     font-weight:bold;
     font-size:20px;
     text-transform:uppercase;
 }
-.default .description{
+.default .section-description{
     color: #adadad;
     font-size: 12px;
     margin-top: 5px;
@@ -196,7 +196,7 @@ ul .active a{
     line-height:20px;
     margin-right: 12px;;
 }
-.default .body .imgVideo{
+.default .section-body .imgVideo{
     width:500px;
     height:auto;
     box-shadow: 2px 6px 12px #737272;
@@ -205,7 +205,7 @@ ul .active a{
     position:relative;
     cursor:pointer;
 }
-.default .body .legendaImage{
+.default .section-body .legendaImage{
     width:500px;
     height:auto;
     display:none;
@@ -278,7 +278,7 @@ ul .active a{
 
 /*---- Our Projects (Filter bar area) ----*/
 
-.body .filterProjects{
+.section-body .filterProjects{
     width: 600px;
     margin: auto;
     background-color: #ededed;
@@ -290,13 +290,13 @@ ul .active a{
     align-items:center;
     border: 1px solid #ccc;
 }
-.body .filterProjects ul{
+.section-body .filterProjects ul{
     list-style: none;
     display: flex;
     align-items:center;
     text-transform: uppercase;
 }
-.body .filterProjects ul li{
+.section-body .filterProjects ul li{
     display:flex;
     align-items:center;
     justify-content:center;
@@ -307,19 +307,20 @@ ul .active a{
     border-bottom: 5px solid transparent;
     border-top: 5px solid transparent;
 }
-.body .filterProjects ul li:last-child{
+.section-body .filterProjects ul li:last-child{
     border-right: 0;
 }
-.body .filterProjects ul li:hover{
+.section-body .filterProjects ul li:hover{
     border-bottom: 5px solid #b98b59;
 }
-.body .filterProjects ul li.active{
+.section-body .filterProjects ul li.active{
     border-bottom: 5px solid #b98b59;
 }
-.body .projects a{
+.section-body .projects a{
+    display: block;
     width:190px;
     text-align:center;
-    margin: auto;
+    margin: 20px auto;
 }
 
 /*---- Photos Area ----*/
@@ -494,73 +495,60 @@ ul .active a{
 }
 
 
-/*---- Slide Happy Clients ----*/
-
-
-.depoiment .body{
-    max-width:initial;
-}
-.depoimentsClientArea{
+/*---- Area slide Happy Clients ----*/
+.section-body{
+    width:100vw;
+    max-width: 1120px;
     overflow: hidden;
 }
-.depoimentsClientArea .slideClients{
+.section-client--sliders{
     width: 1000vw;
-    height: 100%;
-}
-.depoimentsClientArea .slider{
-    width: 1000vw;
-    height: 100%;
-    display: flex;
-}
-.depoimentsClientArea .sliderContent{
     display:flex;
-    width: 100%;
-    flex-direction:column;
-    height:100%;
-    justify-content: center;
-    align-items:center;
 }
-
-
-
-
-.slideClients .sliderContent .clientAvatar{
-    margin-top:30px;
-    margin-bottom:30px;
+.section-client--sliders .section-client--slide{
+    width:100vw;
+    max-width: 1120px;
+    display:inline-block;
 }
-.slideClients .sliderContent .nameClient p:first-child{
-    font-weight: bold;
-    font-size: 20px;
-}
-.slideClients .sliderContent .nameClient p:last-child{
-    font-weight: 600;
-    margin-top:5px;
-}
-.slideClients .sliderContent .depoimentClient{
+.section-body .section-slide--content{
     display: flex;
     flex-direction: column;
     align-items:center;
+    text-align: center;
+    padding: 20px;
+}
+.section-body .section-slide--content--avatar{
+    width:120px;
+    margin-bottom:20px;
+}
+.section-body .section-slide--content--name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.section-body .section-slide--content--description{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom:20px;
+}
+.section-body .section-slide--content--quoteImg{
+    margin-bottom: 15px;
+}
+.section-body .section-slide--content--quote{
+    color:#adadad;
+    line-height:20px;
     max-width: 600px;
-    line-height:25px
 }
-.slideClients .sliderContent .depoimentClient img{
-    width: 26px;
-    margin-top:23px;
-    margin-bottom:15px;
-}
+/*---- CSS POINTERS ----*/
 
-
-/*---- Slider Pointer Happy clients ----*/
-
-
-.depoimentsClientArea .pointers{
+.section-body .pointers{
+    margin-top:30px;
     height: 15px;
-    margin-top:40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
-.depoimentsClientArea .pointer{
+.section-body .pointer{
     width: 15px;
     height: 15px;
     border: 2px solid #b98b59;
@@ -568,7 +556,7 @@ ul .active a{
     margin: 0 5px;
     cursor:pointer;
 }
-.depoimentsClientArea .pointers .active{
+.section-body .pointers .active{
     background-color: #b98b59;
 }
 

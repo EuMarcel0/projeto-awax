@@ -16,3 +16,28 @@
                 </div>    
             </div>
         </section>
+
+
+
+.banner .slidersArea{
+    width:1000vw;
+    height:100%;
+}
+.banner .slider{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    justify-content:center;
+    align-items:center;
+}
+.banner .sliderContent{
+    width:100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
