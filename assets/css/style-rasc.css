@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 13px;
+
+}
+.default .section-body {
+    max-width:1140px;
+    margin:auto;
+}
+.default{
+    display:flex;
+    margin: auto;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.default .section-title,
+.default .section-description{
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+    text-transform:uppercase;
+}
+.default .section-description{
+    color: #adadad;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+
+/*---- CSS PARA COPIAR ----*/
+
+
+.section-client--body{
+    width:100vw;
+    max-width: 1120px;
+    overflow: hidden;
+}
+.section-client--sliders{
+    width: 1000vw;
+    display:flex;
+}
+.section-client--sliders .section-client--slide{
+    width:100vw;
+    max-width: 1120px;
+    display:inline-block;
+}
+.section-client--body .section-slide--content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    padding: 20px;
+}
+.section-client--body .section-slide--content--avatar{
+    width:120px;
+    margin-bottom:20px;
+}
+.section-client--body .section-slide--content--name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.section-client--body .section-slide--content--description{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom:20px;
+}
+.section-client--body .section-slide--content--quoteImg{
+    margin-bottom: 15px;
+}
+.section-client--body .section-slide--content--quote{
+    color:#adadad;
+    line-height:20px;
+    max-width: 600px;
+}
+/*---- CSS POINTERS ----*/
+
+.section-client--body .pointers{
+    margin-top:30px;
+    height: 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.section-client--body .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b98b59;
+    border-radius:8px;
+    margin: 0 5px;
+    cursor:pointer;
+}
+.section-client--body .pointers .active{
+    background-color: #b98b59;
+}
+
+
+
+
+/*---- Area Default colors ----*/
+
+.default.light{
+    background-color: #f7f7f7;
+    color: #000;
+}
+.default.dark{
+    background-color: #000;
+    color: #fff;
+}
+.default.white{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/*---- OUR TEAM ----*/
+
+.bg-team{
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-body{
+    width: 100vw;
+    max-width: 1120px;
+
+}
+.section-team{
+    max-width:880px;
+    overflow:hidden;
+    margin: auto;
+
+}
+.section-team--sliders{
+    width:1000vw; 
+}
+
+.section-team--sliders .slide{
+    width:280px;
+    display:inline-block;
+    margin-right: 20px;
+    min-height:300px;
+    background-color:#fff;
+    color:#000;
+
+}
