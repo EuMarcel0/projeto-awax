@@ -745,9 +745,14 @@ ul .active a{
     font-weight: bold;
     color: #b98b59;
     font-size: 45px;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.224);
     text-align: center;
     padding: 5px;
+}
+.facts-infos--line{
+    width: 20px;
+    height:3px;
+    background-color: #555;
+    margin:auto;
 }
 .facts-infos .facts-infos--detals{
     text-transform: uppercase;
@@ -762,4 +767,5 @@ ul .active a{
     line-height:20px;
     width:150px;
     margin: auto;
+    font-weight: 600;
 }
