@@ -114,6 +114,8 @@ ul .active a{
     font-weight: 600;
 }
 .button{
+    width: 180px;
+    text-align: center;
     text-decoration: none;
     color: #fff;
     display: block;
@@ -550,7 +552,7 @@ ul .active a{
 
 /*---- Empresas Parceiras ----*/
 
-.empresas .empresasApoiadoras{
+.companys .section-company{
     padding: 50px;
     display:flex;
     justify-content:center;
@@ -558,15 +560,15 @@ ul .active a{
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-.empresas .empresasApoiadoras .logoEmpresa{
+.companys .section-company .section-company-logo{
     margin-left:80px;
 }
-.empresas .empresasApoiadoras .logoEmpresa:first-child{
+.companys .section-company .section-company-logo:first-child{
     margin-left:0;
 }
 
 
-/*---- Price ----*/
+/*---- Are Price ----*/
 
 
 .tablePrice{
@@ -575,30 +577,35 @@ ul .active a{
     text-align: center;
 }
 .containerPrice{
+    width: 100vw;
     max-width: 1120px;
     height: 100%;
 }
-.tablePrice .price{
+.tablePrice .item-price{
     flex:1;
     padding: 30px;
     margin-right: 20px;
     background-color:#fff;
     border-radius:5px;
 }
-.tablePrice .price:last-child{
+.tablePrice .item-price:last-child{
     margin-right:0;
 }
-.tablePrice .price p:first-child{
+.tablePrice .item-price .item-price--title{
     font-size: 13px;
     text-transform:uppercase;
     font-weight: 600;
     margin-bottom:10px;
 }
-.tablePrice .price h1{
-    font-size: 27px;
+.tablePrice .item-price .item-price--price{
+    font-size: 25px;
+    font-weight: bold;
     margin-bottom:-5px;
 }
-.tablePrice .price span{
+.tablePrice .item-price .item-price--desc{
+    color: #353535;
+}
+.tablePrice .item-price span{
     text-transform:uppercase;
     color: #b5b5b5;
     font-size:10px;
@@ -606,8 +613,7 @@ ul .active a{
     display: inline-block;
     margin-bottom:17px;
 }
-
-.tablePrice .price a{
+.tablePrice .item-price a{
     display:inline-block;
     width:130px;
     height:46px;
@@ -623,9 +629,103 @@ ul .active a{
     text-transform: uppercase;
     transition:all 0.3s linear;
 }
-.tablePrice .price a:hover{
+.tablePrice .item-price a:hover{
     background-color: #b98b59;
 }
-.tablePrice .price a.active{
+.tablePrice .item-price a.active{
     background-color: #b98b59;
 }
+
+
+/*---- Area Price ----*/
+
+
+/*---- Area Premium ----*/
+
+.section-premium{
+    width:100vw;
+    max-width: 1120px;
+    overflow: hidden;
+}
+.section-premium-sliders{
+    width: 1000vw;
+}
+.section-premium-slide{
+    width:100vw;
+    max-width: 1120px;
+    display:inline-block;
+}
+.section-premium-slide .slide-area{
+    display:flex;
+    border-bottom:1px solid #ccc;
+}
+.slide-area--books img{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding: 0 20px;
+    margin-left: 40px;
+}
+.section-premium-slide--infos{
+    flex: 2;
+    padding: 35px 20px;
+}
+.section-premium-slide--infos .section-premium-slide--infos--features{
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.section-premium-slide--infos--features img{
+    width: 30px;
+    height: 27px;
+    margin-right: 30px;
+}
+.section-premium-slide--infos--features .section-premium-slide--infos--features--desc{
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 480px;
+    font-size: 20px;
+   
+}
+.section-premium-slide--infos--features .section-premium-slide--infos--features--desc span{
+    text-transform:none;
+    font-weight: normal;
+    color: #555;
+    font-size: 13px;
+}
+.feature--content--one,
+.feature--content--two,
+.feature--content--three{
+    display:flex;
+    margin-bottom:30px;
+}
+.section-premium-slide--infos--features .section-premium-slide--infos--features--desc .feature-detals{
+    text-transform: uppercase;
+}
+
+.section-premium .pointers{
+    margin-top:30px;
+    margin-bottom: 30px;
+    height: 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.section-premium .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b98b59;
+    border-radius:8px;
+    margin: 0 5px;
+    cursor:pointer;
+}
+.section-premium .pointers .active{
+    background-color: #b98b59;
+}
+.section-premium .button{
+    margin:auto;
+}
+
+
