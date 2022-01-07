@@ -5,12 +5,12 @@
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
 body{
     font-size: 13px;
     overflow-x: hidden;
 }
-/*---- CSS Menu e logo ----*/
+
+/*---- AREA MENU - NAV - LOGO ----*/
 
 header{
     background-color: #000;
@@ -37,7 +37,6 @@ header .logo img{
     justify-content:flex-end;
     list-style: none;
 }
-
 .menu li a{
     padding-left:10px;
     padding-right: 10px;
@@ -51,7 +50,6 @@ header .logo img{
     border-bottom: 4px solid #000;
     transition: border-bottom 0.3s ease-in-out;
 }
-
 .menu li a:hover{
     border-bottom: 4px solid #b98b59;
     color: gray;
@@ -62,7 +60,8 @@ ul .active a{
     color: gray;
 }
 
-/*---- CSS Banner ----*/
+
+/*---- AREA Banner ----*/
 
 .banner{
     height:calc(100vh - 100px);
@@ -135,7 +134,7 @@ ul .active a{
     
 }
 
-/*---- CSS pointers Slide ----*/
+/*---- CSS pointers Slide  Banner----*/
 
 .banner .pointers{
     width:100vw;
@@ -225,6 +224,9 @@ ul .active a{
     transition: all 0.5s linear;
 }
 
+
+
+
 /*---- Area Default colors ----*/
 
 .default.light{
@@ -240,8 +242,10 @@ ul .active a{
     color: #000;
 }
 
-/*---- Services ----*/
 
+
+
+/*---- AREA Services ----*/
 
 .default.dark .section-services{
    display: flex;
@@ -273,6 +277,7 @@ ul .active a{
 .services .serviceIcon{
     width: 50px;
 }
+
 
 /*---- Our Projects (Filter bar area) ----*/
 
@@ -321,7 +326,8 @@ ul .active a{
     margin: 20px auto;
 }
 
-/*---- Photos Area ----*/
+
+/*---- AREA PROJECTS ----*/
 
 .galeryProjects{
     width:100vw;
@@ -377,9 +383,7 @@ ul .active a{
 }
 
 
-
-
-/*---- OUR TEAM ----*/
+/*---- AREA OUR TEAM ----*/
 
 .bg-team{
     background-image: url(../images/background.jpg);
@@ -462,6 +466,7 @@ ul .active a{
     background-color:#b98b59;
 }
 
+
 /*---- POINTERS SLIDE OUR TEAM----*/
 
 .section-body .pointers{
@@ -482,6 +487,7 @@ ul .active a{
 .section-body .pointers .active{
     background-color: #b98b59;
 }
+
 
 /*---- Area slide Happy Clients ----*/
 
@@ -528,7 +534,9 @@ ul .active a{
     line-height:20px;
     max-width: 600px;
 }
-/*---- CSS POINTERS ----*/
+
+
+/*---- CSS POINTERS HAPPY CLIENTS----*/
 
 .section-body .pointers{
     margin-top:30px;
@@ -550,7 +558,7 @@ ul .active a{
 }
 
 
-/*---- Empresas Parceiras ----*/
+/*---- Companys ----*/
 
 .companys .section-company{
     padding: 50px;
@@ -569,7 +577,6 @@ ul .active a{
 
 
 /*---- Are Price ----*/
-
 
 .tablePrice{
     width: 100%;
@@ -635,9 +642,6 @@ ul .active a{
 .tablePrice .item-price a.active{
     background-color: #b98b59;
 }
-
-
-/*---- Area Price ----*/
 
 
 /*---- Area Premium ----*/
@@ -729,6 +733,7 @@ ul .active a{
 }
 
 /*---- Area Some Facts ----*/
+
 .section-facts{
     display: flex;
     width: 100vw;
