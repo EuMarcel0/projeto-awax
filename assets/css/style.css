@@ -728,4 +728,38 @@ ul .active a{
     margin:auto;
 }
 
-
+/*---- Area Some Facts ----*/
+.section-facts{
+    display: flex;
+    width: 100vw;
+    max-width: 1120px;
+}
+.section-facts--area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex:1;
+}
+.facts-infos .facts-infos--numbers{
+    font-weight: bold;
+    color: #b98b59;
+    font-size: 45px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.224);
+    text-align: center;
+    padding: 5px;
+}
+.facts-infos .facts-infos--detals{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.facts-infos .facts-infos--desc{
+    color:#555;
+    line-height:20px;
+    width:150px;
+    margin: auto;
+}
