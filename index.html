@@ -681,30 +681,25 @@
         <!-- AREA SOCIAL SHARE /-->
 
         <!-- AREA CONTACT US-->
+
         <section class="default light">
             <div class="section-title">Contact US</div>
             <div class="section-description">Our Agency Located In Melbourne, Australia</div>
             <div class="body">
-                <div class="section-contactus">
-                    <div class="section-contactus--form">
-                        <div class="section-contactus--form--user">
-                            <form action="" method="POST">
-                                <input type="text" name="name" class="section-contactus--form--user--name" required placeholder="NAME">
-                            </form>
-                        </div>
-                        <div class="section-contactus--form--user">
-                            <form action="" method="POST">
-                                <input type="email" name="email" class="section-contactus--form--user--email" required placeholder="EMAIL">
-                            </form>
-                        </div>
+               <form method="post" class="section-contactus--form">
+                    <div class="section-contactus--form--user">
+                        <input type="text" name="name" class="section-contactus--form--user--name" required placeholder="NAME">
+                        <input type="email" name="email" class="section-contactus--form--user--email" required placeholder="EMAIL">
                     </div>
-                    <form action="" method="POST" class="section-contactus--form--message">
+                    <div class="section-contactus--form--message">
                         <input type="text" name="subject" class="section-contactus--form--user--subject" required placeholder="SUBJECT">
                         <input type="text" name="message" class="section-contactus--form--user--message" required placeholder="MESSAGE">
-                    </form>
-                </div>
+                    </div>
+                    <input type="submit" name="enviar" value="Send Message" class="button">
+                </form>
             </div>
         </section>
+
         <!-- AREA CONTACT US /-->
     </main>
 </body>
