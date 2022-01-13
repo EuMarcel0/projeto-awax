@@ -920,3 +920,125 @@ input[type="submit"]{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
+
+/*---- AREA MAP/LOCATION ----*/
+
+.location-area{
+    background-image:url(../images/mapa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.location-body{
+    width: 100vw;
+    max-width: 1120px;
+    margin: auto;
+    display:flex;
+    padding:40px 10px;
+    color:#aeaeae;
+    font-weight: 600;
+}
+.location-body--infos{
+    width: 50%;
+    padding:40px 35px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px #555;
+}
+.location-body--infos--area{
+    display:flex;
+    align-items:center;
+    margin-bottom: 14px;
+}
+.location-body--infos--image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aeaeae;
+    width: 35px;
+    height:35px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+/*---- AREA FOOTER ----*/
+
+footer{
+    background-color: #000;
+    padding: 30px 0;
+}
+.footer-area{
+    width: 100vw;
+    max-width: 1120px;
+    display:flex;
+    margin: auto;
+}
+.footer-area--infos{
+    flex:1;
+    height:200px;
+    color:#5e5d5d;
+    padding: 5px;
+    font-weight: 600;
+}
+.footer--socials{
+    display:flex;
+    align-items:center;
+}
+.footer-area--infos:first-child{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-area--infos:nth-child(2){
+    line-height:20px;
+    margin-right: 20px;
+}
+.footer--socials a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:20px;
+    height:20px;
+    background-color: #373737;
+    padding: 15px;
+    margin-right: 5px;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: all 0.3s linear;
+}
+.footer--socials a:hover{
+    background-color:#b98b59;
+}
+.footer--socials .active{
+    background-color:#b98b59;
+}
+.footer-copyright{
+    color:#fff;
+    font-weight:bold;
+    font-size: 13px;
+}
+.footer-area--form{
+    background-color: #373737;
+    padding: 40px 10px;
+    border-radius: 4px;
+}
+.footer-area--form form{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.footer-area--form input[type="email"]{
+    border-bottom: 2px solid #ccc;
+    width:70%;
+    color:#fff;
+}
+input[type="email"]::placeholder{
+    text-align: center;
+    font-size: 12px;
+}
+.footer-area--form input[type="submit"]{
+    margin: 20px 0;
+}
