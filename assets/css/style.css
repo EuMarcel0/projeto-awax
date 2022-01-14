@@ -1043,6 +1043,10 @@ input[type="email"]::placeholder{
     margin: 20px 0;
 }
 
+/*---- AREA MENU MOBILE ----*/
+.header .menu-mobile{
+    display: none;
+}
 
 /*---- RESPONSIVIDADE ----*/
 
@@ -1061,8 +1065,48 @@ input[type="email"]::placeholder{
         background-color: rgba(0, 0, 0, 0.7);
         top: 100px;
         right: 0;
+        display:none;
     }
     nav ul{
         flex-direction: column;
+    }
+    .menu {
+        flex: 1;
+        display: none;
+        justify-content: flex-end;
+    }
+    .menu li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        margin-left: 50px;
+        font-size: 1rem;
+        border:0;
+    }
+    ul .active a {
+        border:0;   
+    }
+    .menu li a:hover{
+        border:0;
+    }
+    .header {
+        max-width: 1120px;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header .menu-mobile{
+        display:block;
+        margin-right: 40px;
+
+    }
+    .section-team {
+        max-width: 580px;
     }
 }
