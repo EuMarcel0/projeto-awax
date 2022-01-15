@@ -1205,6 +1205,10 @@ input[type="email"]::placeholder{
        margin-top:50px;
        text-align: center;
     }
+    .footer-area--infos{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
     .footer--socials {
         display: flex;
         align-items: center;
