@@ -52,7 +52,7 @@ header .logo img{
 }
 .menu li a:hover{
     border-bottom: 4px solid #b98b59;
-    color: gray;
+    color: rgb(172, 172, 172);
 }
 
 ul .active a{
@@ -1519,5 +1519,52 @@ footer{
     }
     .companys .section-company .section-company-logo:last-child{
         margin-bottom:0px;
+    }
+    
+}
+@media(max-width:750px){
+    /*---- RESPONSIVIDADE PREMIUM----*/
+
+    .section-premium-slide .slide-area{
+        flex-direction: column;
+    }
+    .slide-area--books img {
+        width: 360px;
+        padding: 0 20px;
+        margin: auto;
+    }
+    .section-premium-slide--infos{
+        margin-left:0;
+        margin: auto;
+    }
+
+    /*---- RESPONSIVIDADE COMPANY ----*/
+
+    .companys .section-company{
+        flex-direction: column;
+    }
+    .companys .section-company .section-company-logo{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom:20px;
+    }
+    .companys .section-company .section-company-logo:last-child{
+        margin-bottom:0px;
+    }
+
+}
+@media(max-width:320px){
+    .slide-area--books img{
+        width:240px;
+    }
+    .banner .sliderContent h1{
+        font-size: 1.8rem;
+        line-height: 28px;
+    }
+}
+@media(max-width:526px){
+    .banner .sliderContent h1{
+        font-size: 1.8rem;
+        line-height: 28px;
     }
 }
