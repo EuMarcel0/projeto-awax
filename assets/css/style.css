@@ -1061,7 +1061,9 @@ footer{
 @media(min-width:420px) and (max-width:820px){
 
     /*---- RESPONSIVIDADE MENU----*/
-
+    .menu-mobile img{
+        width: 30px;
+    }
     nav{
         position: absolute;
         z-index: 99;
@@ -1550,6 +1552,167 @@ footer{
     }
     .companys .section-company .section-company-logo:last-child{
         margin-bottom:0px;
+    }
+
+}
+
+@media(max-width:428px){
+
+    /*---- RESPONSIVIDADE ABOUT US----*/
+    .menu-mobile img{
+        width: 30px;
+    }
+    .contentAboutUs{
+        flex-direction: column;
+    }
+    .contentAboutUs .textArea{
+        margin-right: 0;
+    }
+    .default .section-body .imgVideo{
+        width: 100%;
+    }
+    .default .imgArea:hover .legendaImage {
+        width: 100%;
+        box-shadow: 1px 0px 5px #737272;
+    }
+    .contentAboutUs .imgArea{
+        
+        text-align: center;
+        margin-top: 30px;
+    }
+    .default .textArea a{
+        margin-top: 14px;
+    }
+    .default .contentAboutUs{
+        padding: 0 20px;
+    }
+
+     /*---- RESPONSIVIDADE OUR TEAM ----*/
+
+     .section-team {
+        max-width: 280px;
+    }
+
+    /*---- RESPONSIVIDADE SOME FACTS----*/
+
+    .section-facts{
+        flex-wrap: wrap;
+    }
+    .section-facts--area{
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /*---- RESPONSIVIDADE SERVICES----*/
+
+    .section-services{
+        flex-wrap: wrap;
+    }
+    .section-services .section-services--service{
+        min-width: 100%;
+        margin-bottom:30px;
+       
+    }
+    .default.dark .section-services .section-services--service{
+        border: 0;
+    }
+    .section-services:nth-child(2){
+        border-right: 0;
+    }
+    .default.dark .section-services .section-services--service.borderleft{
+        border-left:0;
+    }
+
+
+    /*---- RESPONSIVIDADE MAP----*/
+
+    .location-body--infos {
+        width: 100%;
+        padding: 5px;
+    }
+    .location-body{
+        padding: 10px;
+    }
+    .location-body--infos--description{
+        font-size: 10px;
+    }
+    .location-body--infos--image{
+        width:21px;
+        height: 21px;
+    }
+    .location-body--infos--image img{
+        width:12px;
+    }
+
+    /*---- RESPONSIVIDADE FORM ----*/ 
+
+    .section-contactus--form{
+        width:100vw;
+        padding: 10px;
+        margin-top:0px;
+    }
+    .section-contactus--form--user{
+        flex-direction: column;
+    }
+    
+    .section-contactus--form--user--email,
+    .section-contactus--form--user--name{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .section-contactus--form--user--name{
+        margin-top:0;
+        margin-right: 0;
+    }
+    .section-contactus--form--user--email::placeholder{
+        text-align: left;
+    }
+    .section-contactus--form--user--subject,
+    .section-contactus--form--user--message{
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+
+    /*---- RESPONSIVIDADE SOCIAL SHARE----*/
+
+    .section-share--area{
+        flex-direction:column;
+    }
+    .social-share .section-share--content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #afafaf;
+    }
+    .section-social--content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-share .section-share--content .share-description{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .section-share--area .icon--share{
+        display: none;
+    }
+    .social-share--socials--icons{
+        display: flex;
+    }
+    .section-share--area .section-social--content{
+        margin-right:15px;
+    }
+    .section-social--content:last-child{
+        margin-right: 0;
+    }
+    .social-icon--pinterest,
+    .social-icon--twitter,
+    .social-icon--facebook,
+    .social-icon--google,
+    .social-icon--linkedin{
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 
 }
