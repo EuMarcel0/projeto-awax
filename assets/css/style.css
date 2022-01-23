@@ -158,6 +158,14 @@ ul .active a{
 }
 
 /*---- Default Content (Light) About Us Zone----*/
+.btn{
+    cursor:pointer;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+    display: none;
+}
 
 .default{
     display:flex;
