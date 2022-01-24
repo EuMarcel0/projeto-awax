@@ -16,5 +16,29 @@ function controlarBotao(){
         document.querySelector(".btn").style.display = 'block';
     }
 }
+window.addEventListener("scroll", controlarBotao);
 
-window.addEventListener('scroll', controlarBotao);
+
+//ATIVAR MENU MOBILE
+
+window.onload = function(){
+    document.querySelector('.menu-mobile').addEventListener('click', function(){
+        if(document.querySelector('.menu nav').style.display == 'none'){
+            document.querySelector('.menu nav').style.display = 'flex';
+        } else{
+            document.querySelector('.menu nav').style.display = 'none';
+        }
+    })
+};
+
+// window.onload = function(){
+//     document.querySelector('.menu nav ul li a').addEventListener('click', function(){
+//         if(document.querySelector('.menu-mobile').style.display == 'flex'){
+//             document.querySelector('.menu-mobile').style.display = 'none';
+//         } else {
+//             document.querySelector('.menu-mobile').style.display = 'flex';
+//         }
+//     })
+// };
+
+

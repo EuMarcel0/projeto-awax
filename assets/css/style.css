@@ -158,13 +158,16 @@ ul .active a{
 }
 
 /*---- Default Content (Light) About Us Zone----*/
-.btn{
-    cursor:pointer;
+.btn img{
+    width:40px;
+    height:40px;
     position: fixed;
     right: 10px;
     bottom: 10px;
-    z-index: 999;
-    display: none;
+    background-color:#b98b59;
+    padding:5px;
+    border-radius: 50%;
+    cursor:pointer;
 }
 
 .default{
@@ -1087,7 +1090,7 @@ footer{
     }
     .menu {
         flex: 1;
-        display: none;
+        /* display: none; */
         justify-content: flex-end;
     }
     .menu li a {
@@ -1097,7 +1100,7 @@ footer{
         font-weight: 700;
         display: flex;
         align-items: center;
-        height: 60px;
+        height: 50px;
         margin-left: 50px;
         font-size: 1rem;
         border:0;
@@ -1120,6 +1123,8 @@ footer{
     .header .menu-mobile{
         display:block;
         margin-right: 40px;
+        position: absolute;
+        right: 0px;
 
     }
     /*---- RESPONSIVIDADE OUR TEAM ----*/
@@ -1245,7 +1250,6 @@ footer{
 @media(max-width:419px){
 
     /*---- RESPONSIVIDADE MENU ----*/
-
     nav{
         position: absolute;
         z-index: 99;
@@ -1261,7 +1265,7 @@ footer{
     }
     .menu {
         flex: 1;
-        display: none;
+        /* display: none; */
         justify-content: flex-end;
     }
     .menu li a {
@@ -1271,10 +1275,10 @@ footer{
         font-weight: 700;
         display: flex;
         align-items: center;
-        height: 48px;
+        height: 50px;
         margin-left: 50px;
-        font-size: 0.8rem;
-        border: 0;
+        font-size: 1rem;
+        border:0;
     }
     ul .active a {
         border:0;
@@ -1282,6 +1286,12 @@ footer{
     }
     .menu li a:hover{
         border:0;
+    }
+    .header .menu-mobile {
+        display: block;
+        margin-right: 40px;
+        position: absolute;
+        right: 0px;
     }
     .header {
         max-width: 1120px;
